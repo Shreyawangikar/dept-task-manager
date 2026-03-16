@@ -1,0 +1,43 @@
+body{
+font-family:Arial;
+background:#f5f7fb;
+padding:40px;
+}
+
+.auth-card{
+width:350px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+button{
+padding:10px 15px;
+background:#3498db;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:4px;
+}
+
+table{
+width:100%;
+background:white;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #ddd;
+}
