@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dept Task Manager</title>
+<title>Department Task Manager</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,9 +11,32 @@
 
 <h1>Department Task Manager</h1>
 
+<!-- LOGIN SECTION -->
+
+<div id="loginSection">
+
+<h3>Login</h3>
+
+<input id="loginEmail" placeholder="Email">
+<input id="loginPassword" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p class="switch">
+New user? 
+<a href="#" onclick="showRegister()">Register</a>
+</p>
+
+</div>
+
+
+<!-- REGISTER SECTION -->
+
+<div id="registerSection" style="display:none;">
+
 <h3>Register</h3>
 
-<input id="name" placeholder="Name">
+<input id="name" placeholder="Full Name">
 <input id="email" placeholder="Email">
 <input id="password" type="password" placeholder="Password">
 
@@ -24,18 +47,34 @@
 
 <button onclick="register()">Register</button>
 
-<hr>
+<p class="switch">
+Already have an account? 
+<a href="#" onclick="showLogin()">Login</a>
+</p>
 
-<h3>Login</h3>
-
-<input id="loginEmail" placeholder="Email">
-<input id="loginPassword" type="password" placeholder="Password">
-
-<button onclick="login()">Login</button>
+</div>
 
 </div>
 
 <script src="script.js"></script>
+
+<script>
+
+function showRegister(){
+
+document.getElementById("loginSection").style.display="none"
+document.getElementById("registerSection").style.display="block"
+
+}
+
+function showLogin(){
+
+document.getElementById("loginSection").style.display="block"
+document.getElementById("registerSection").style.display="none"
+
+}
+
+</script>
 
 </body>
 </html>

@@ -41,3 +41,12 @@ th,td{
 padding:10px;
 border-bottom:1px solid #ddd;
 }
+.switch{
+margin-top:10px;
+font-size:14px;
+}
+
+.switch a{
+color:#3498db;
+text-decoration:none;
+}
